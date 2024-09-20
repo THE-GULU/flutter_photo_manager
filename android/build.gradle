@@ -128,13 +128,18 @@ android {
         main.java.srcDirs += 'src/main/kotlin'
     }
     
+    java {
+       toolchain {
+           languageVersion.set(JavaLanguageVersion.of(17))
+       }
+    }
     kotlinOptions {
-        jvmTarget = '23'
+        jvmTarget = '17'
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_23
-        targetCompatibility JavaVersion.VERSION_23
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     defaultConfig {
