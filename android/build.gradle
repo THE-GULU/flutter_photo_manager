@@ -129,12 +129,12 @@ android {
     }
     
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '23'
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_23
+        targetCompatibility JavaVersion.VERSION_23
     }
 
     defaultConfig {
